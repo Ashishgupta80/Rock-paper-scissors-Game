@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="./10-rock-paper-scissors.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/Images/rock_paper_scissors_logo.jpg">
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
-    <button class="move-button" onclick="playGame('rock');"><img src="./Images/rock-emoji.png" alt="Rock" class="rock-icon"></button>
+    <button class="move-button" onclick="playGame('rock');"><img src="/Images/rock-emoji.png" alt="Rock" class="rock-icon"></button>
 
     <button class="move-button" onclick="
       playGame('paper');
   "
     >
-      <img src="/10-HTML-CSS-JS/Images/paper-emoji.png" alt="Paper" class="paper-icon">
+      <img src="/Images/paper-emoji.png" alt="Paper" class="paper-icon">
     </button>
 
     <button class="move-button"
-      onclick="playGame('scissors');"><img src="./Images/scissors-emoji.png" alt="Scissors" class="scissors-icon">
+      onclick="playGame('scissors');"><img src="/Images/scissors-emoji.png" alt="Scissors" class="scissors-icon">
     </button>
 
     <p class="js-showResult result" ></p>
@@ -29,19 +30,10 @@
         score.wins = 0;
         score.losses = 0;
         score.ties = 0;
-        // console.log('Score was Zero 0');
         localStorage.removeItem('score'); 
         updateScoreElement();
         " class="reset-button">Reset Score</button>
 
-    <script src="./10-rock-paper-scissors.js">
-
-
-// In this lession 
-// 1. Reviewed CSS, and added CSS to projects
-//2. .classList
-// 3. Finished Rock Paper Scissors
-// Organize JavaScript and CSS code into separte files
-    </script>
+    <script src="/script.js"> </script>
   </body>
 </html>
